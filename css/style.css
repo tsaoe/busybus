@@ -1,0 +1,104 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family:'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+nav {
+  background-color: #F8F8F8;
+  margin: 0 auto;
+  padding: 20px 0 15px 15px;
+  position: fixed;
+  width: 375px;
+  height: 100px;
+}
+
+.BusyBus h1{
+  color:#2F80ED;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.search-box {
+  background-color: #E5E5E5;
+  width: 343px;
+  height: 36px;
+  padding-top:12px;
+}
+
+.search-box h1 {
+  color: #333333;
+  font-size: 14px;
+  float: left;
+  padding-left:30px;
+  font-family:'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
+.route_list{
+  padding-top: 50px;
+  padding-bottom:50px;
+}
+
+.washington_state {
+  background: url("../images/map_grid.png") no-repeat top center;
+  height:300px;
+  background-size: cover;
+}
+
+.location {
+  background-color: #F0F0F0;
+  padding: 16px;
+  border: 0.5px solid #000000;
+}
+
+.direction {
+    display: inline-block;
+}
+
+.location h1{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.direction h2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.direction h3 {
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: normal;
+  width: 100%;
+}
+
+h3 span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+.wait-time {
+  font-family:'Roboto', sans-serif;
+  color: #219653;
+  font-size: 14px;
+  line-height: 1.6;
+  float:right;
+  text-align: right;
+  padding-top: 30px;
+}
