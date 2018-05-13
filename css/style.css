@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
 body {
   background-color: #333;
   font-family:'Roboto', sans-serif;
@@ -10,15 +15,14 @@ body {
 
 nav {
   background-color: #F8F8F8;
-  margin: 0 auto;
-  padding: 20px 0 15px 15px;
+  padding: 0 0 15px 15px;
   position: fixed;
   width: 375px;
   height: 120px;
 }
 
 .status_bar{
-  background: url("../images/Status_bar1.png")no-repeat top center;
+  background: url("../images/Status_bar1.png")no-repeat top;
   height:20px;
   width: 375px;
 }
@@ -28,6 +32,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  padding-top:10px;
   padding-bottom: 10px;
 }
 
@@ -43,12 +48,6 @@ nav {
   font-size: 14px;
   float: left;
   padding-left:30px;
-  font-family:'Roboto', sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  width: 375px;
 }
 
 .route_list{
@@ -72,18 +71,23 @@ nav {
     display: inline-block;
 }
 
+.highlighted_route{
+  background-color: #DBDBDB;
+  width: 100%;
+  height: 48px;
+  padding-bottom: 10px;
+}
+
 table, td {
-    border: 1px solid black;
+    border: 0.5px solid #AEAEAE;
     padding: 5px;
     background-color: #DBDBDB;
     color: #219653;
-    font-family:'Roboto', sans-serif;
     font-size: 14px;
     text-align:center;
-
 }
 
-.location h1{
+h1{
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -108,15 +112,6 @@ h3 span {
   font-weight: 700;
   font-size: 18px;
 }
-.wait_time span{
-  font-family:'Roboto', sans-serif;
-  color: #219653;
-  font-size: 14px;
-  line-height: 1.6;
-  float:right;
-  text-align: right;
-}
-
 .wait-time {
   font-family:'Roboto', sans-serif;
   color: #219653;
@@ -126,6 +121,13 @@ h3 span {
   text-align: right;
   padding-top: 30px;
 }
+
+.wait_time span{
+  color: #219653;
+  float:right;
+  text-align: right;
+}
+
 .footer {
     position: fixed;
     height: 50px;
@@ -133,6 +135,7 @@ h3 span {
     width: 375px;
     background-color: #F9F9F9;
 }
+
 .footer a {
     float: left;
     display: inline;
@@ -141,7 +144,7 @@ h3 span {
     padding-left: 90px;
     text-decoration: none;
     font-size: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .directions_icon {
   background: url("../images/directions.png")no-repeat top;
@@ -151,10 +154,8 @@ h3 span {
   padding-left: 227px;
 }
 .favorites_icon {
-  background: url("../images/favorites.png")no-repeat top;
+  background: url("../images/favorites1.png")no-repeat top;
   display:inline;
   height:25px;
-  width:20px;
-  padding-left:490px;
-
+  width:25px;
 }
